@@ -63,9 +63,9 @@ double resultat;
             if (operation_en_chaine == 1){
                 printf("Veuillez choisir un deuxieme nombre : \n");
                 scanf("%lf", &nombre2);
-                addition(resultat, nombre2);
+                 resultat = addition(resultat, nombre2);
             }
-            else if (operation_en_chaine != 1) {
+            if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
@@ -78,8 +78,9 @@ double resultat;
             if (operation_en_chaine == 1){
                 printf("Veuillez choisir un deuxieme nombre : \n");
                 scanf("%lf", &nombre2);
-                soustraction(resultat, nombre2);
-            } else if (operation_en_chaine != 1) {
+                resultat = soustraction(resultat, nombre2);
+            }
+            if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
@@ -92,9 +93,9 @@ double resultat;
             if (operation_en_chaine == 1){
                 printf("Veuillez choisir un deuxieme nombre : \n");
                 scanf("%lf", &nombre2);
-                multiplication(resultat, nombre2);
+                resultat = multiplication(resultat, nombre2);
             }
-            else if (operation_en_chaine != 1) {
+            if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
@@ -110,12 +111,10 @@ double resultat;
                 if (nombre2 == 0){
                     printf("Vous ne pouvez pas diviser par 0. \n");
                     continue;
-                } else{
-                    resultat = division(nombre1, nombre2);
                 }
-                division(resultat, nombre2);
-            }
-            else if (operation_en_chaine != 1) {
+                resultat = division(resultat, nombre2);
+}
+                if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
@@ -134,9 +133,9 @@ double resultat;
             if (operation_en_chaine == 1){
                 printf("Veuillez choisir un deuxieme nombre : \n");
                 scanf("%lf", &nombre2);
-                puissace(resultat, nombre2);
+                resultat = puissace(resultat, nombre2);
             }
-            else if (operation_en_chaine != 1) {
+            if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
@@ -152,11 +151,11 @@ double resultat;
                     printf("Vous ne pouvez pas faire la racine carrée d'un nombre négatif. \n");
                     continue;
                 } else {
-                    racine_carree(resultat);
+                    resultat = racine_carree(resultat);
 
                 }
             }
-            else if (operation_en_chaine != 1)  {
+            if (operation_en_chaine != 1)  {
                 printf("Veuillez choisir un nombre : \n");
                 scanf("%lf", &nombre1);
                 if (nombre1 < 0) {
@@ -172,9 +171,9 @@ double resultat;
             if (operation_en_chaine == 1){
                 printf("Veuillez choisir un deuxieme nombre : \n");
                 scanf("%lf", &nombre2);
-                pourcentage(resultat, nombre2);
+                resultat = pourcentage(resultat, nombre2);
             }
-            else if (operation_en_chaine != 1) {
+            if (operation_en_chaine != 1) {
                 printf("Veuillez choisir un premier nombre : \n");
                 scanf("%lf", &nombre1);
                 printf("Veuillez choisir un deuxieme nombre : \n");
